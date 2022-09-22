@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Instagram</title>
+</head>
+<body>
+    <div class="inst">
+        <!-- ----- Header_starting ----- -->
+        <header>
+            <div class="logo">
+                <img src="data:image/png;base64,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" alt="">
+            </div>
+            <div class="serach-box">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="search" placeholder="Search">
+            </div>
+            <nav>
+                <ul>
+                    <li>
+                        <i class="fa-solid fa-house"></i>
+                    </li>
+                    <li>
+                        <i class="fab fa-facebook-messenger"></i>
+                    </li>
+                    <li>
+                        <i czlass="far fa-plus-square"></i>
+                    </li>
+                    <li>
+                        <i class="far fa-compass"></i>
+                    </li>
+                    <li>
+                        <i class="far fa-heart"></i>
+                    </li>
+                    <li>
+                        <img src="./img/see u.png" alt="">
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- ----- Section_starting ----- -->
+        <section>
+            <div class="left-side">
+                <div class="story">
+                    <div class="stories">
+                        <a href="#!">
+                            <img src="./img/person_1.jpg" width="60" height="60" alt="">
+                            <p>Nizomiddin </p>
+                        </a>
+                        <a href="#!">
+                            <img src="./img/person_1.jpg" width="60" height="60" alt="">
+                            <p>Nizomiddin</p>
+                        </a>
+                        <a href="#!">
+                            <img src="./img/person_1.jpg" width="60" height="60" alt="">
+                            <p>Nizomiddin </p>
+                        </a>
+                    </div>
+                </div>
+                <div class="posts">
+                    <div class="post-title">
+                        <div class="posts-left">
+                            <div class="image">
+                                <img src="./img/see u.png" width="32" height="32" alt="">
+                            </div>
+                            <div class="details">
+                                <p class="name">Nizomiddin Xusniddinov</p>
+                                <p class="location">Uzb Tashkent</p>
+                            </div>
+                        </div>
+                        <div class="posts-right">
+                            <i class="fa-solid fa-ellipsis"></i>
+                        </div>
+                    </div>
+                    <div class="post-content">
+                        <img src="./img/Html uchun.png" 
+                        width="600" height="600" alt="">
+                    </div>
+                    <div class="post-footer">
+                        <div class="like-share-comment">
+                            <i class="far fa-heart"></i>
+                            <i class="far fa-comment"></i>
+                            <i class="far fa-paper-plane"></i>
+                        </div>
+                        <div class="save">
+                            <i class="far fa-bookmark"></i>
+                        </div>
+                    </div>
+                    <div class="post-footer-content">
+                        <p class="likes">153k likes</p>
+                        <p class="name">Nizomiddin Xusniddinov <span>Please Subscribe</span></p>
+                        <p class="comments">View 1.3k comments</p>
+                        <p class="posting-time">2 minutes age</p>
+                    </div>
+
+                    <div class="add-comment">
+                        <div class="left-side">
+                            <i class="far fa-smile-beam"></i>
+                            <input type="text" placeholder="Add a comment ...       "> 
+                        </div>
+                        <div class="right-side">
+                            <p>Post</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="posts">
+                    <div class="post-title">
+                        <div class="posts-left">
+                            <div class="image">
+                                <img src="./img/see u.png" width="32" height="32" alt="">
+                            </div>
+                            <div class="details">
+                                <p class="name">Nizomiddin Xusniddinov</p>
+                                <p class="location">Uzb Tashkent</p>
+                            </div>
+                        </div>
+                        <div class="posts-right">
+                            <i class="fa-solid fa-ellipsis"></i>
+                        </div>
+                    </div>
+                    <div class="post-content">
+                        <img src="./img/Html.png" 
+                        width="600" height="600" alt="">
+                    </div>
+                    <div class="post-footer">
+                        <div class="like-share-comment">
+                            <i class="far fa-heart"></i>
+                            <i class="far fa-comment"></i>
+                            <i class="far fa-paper-plane"></i>
+                        </div>
+                        <div class="save">
+                            <i class="far fa-bookmark"></i>
+                        </div>
+                    </div>
+                    <div class="post-footer-content">
+                        <p class="likes">153k likes</p>
+                        <p class="name">Nizomiddin Xusniddinov <span>Please Subscribe</span></p>
+                        <p class="comments">View 1.3k comments</p>
+                        <p class="posting-time">2 minutes age</p>
+                    </div>
+
+                    <div class="add-comment">
+                        <div class="left-side">
+                            <i class="far fa-smile-beam"></i>
+                            <input type="text" placeholder="Add a comment ...       "> 
+                        </div>
+                        <div class="right-side">
+                            <p>Post</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="right-side">
+                <div class="profile-title">
+                    <div class="profil-left">
+                        <div class="image">
+                            <img src="./img/see u.png" width="56" height="56" alt="">
+                        </div>
+                        <div class="details">
+                            <p class="name">Nizomiddin Xusniddinov</p>
+                            <p class="surname">Nizomiddin</p>
+                        </div>
+                    </div>
+                    <div class="profil-right">
+                        <p>Switch</p>
+                    </div>
+                </div>
+                <div class="suggestions">
+                    <p>Suggestion for you</p>
+                    <p>See All</p>
+                </div>
+                <div class="suggestions-title">
+                    <div class="suggestions-left">
+                        <div class="image">
+                            <img src="./img/see u.png" height="32" width="32" alt="">
+                        </div>
+                        <div class="details">
+                            <p class="name">Nizomiddin Xusniddinov</p>
+                            <p class="location">Uzb Tashkent</p>
+                        </div>
+                    </div>
+                    <p>Follow</p>
+                    <div class="suggestions-right"></div>
+                </div>
+                <div class="suggestions-title">
+                    <div class="suggestions-left">
+                        <div class="image">
+                            <img src="./img/staff-1.jpg" height="32" width="32" alt="">
+                        </div>
+                        <div class="details">
+                            <p class="name">Nizomiddin Xusniddinov</p>
+                            <p class="location">Uzb Tashkent</p>
+                        </div>
+                    </div>
+                    <p>Follow</p>
+                    <div class="suggestions-right"></div>
+                </div>
+                <div class="suggestions-title">
+                    <div class="suggestions-left">
+                        <div class="image">
+                            <img src="./img/staff-2.jpg" height="32" width="32" alt="">
+                        </div>
+                        <div class="details">
+                            <p class="name">Nizomiddin Xusniddinov</p>
+                            <p class="location">Uzb Tashkent</p>
+                        </div>
+                    </div>
+                    <p>Follow</p>
+                    <div class="suggestions-right"></div>
+                </div>
+                <div class="suggestions-title">
+                    <div class="suggestions-left">
+                        <div class="image">
+                            <img src="./img/staff-3.jpg" height="32" width="32" alt="">
+                        </div>
+                        <div class="details">
+                            <p class="name">Nizomiddin Xusniddinov</p>
+                            <p class="location">Uzb Tashkent</p>
+                        </div>
+                    </div>
+                    <p>Follow</p>
+                    <div class="suggestions-right"></div>
+                </div>
+                <div class="suggestions-title">
+                    <div class="suggestions-left">
+                        <div class="image">
+                            <img src="./img/staff-4.jpg" height="32" width="32" alt="">
+                        </div>
+                        <div class="details">
+                            <p class="name">Nizomiddin Xusniddinov</p>
+                            <p class="location">Uzb Tashkent</p>
+                        </div>
+                    </div>
+                    <p>Follow</p>
+                    <div class="suggestions-right"></div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
